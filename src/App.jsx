@@ -9,12 +9,12 @@ const App = () => {
   const location = useLocation()
   const [brandFoods, setbrandFoods] = useState([]);
   const getFood = () => {
-    fetch('http://localhost:3001/foodnames')
+    fetch("http://backend-stretch-api-git-vercel-peterkims-projects.vercel.app/foodnames")
     .then(response => response.json())
     .then(data => {
       setbrandFoods(data)
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log(err.message))
   }
 
   useEffect(() => {
