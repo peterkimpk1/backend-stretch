@@ -9,7 +9,7 @@ const App = () => {
   const location = useLocation()
   const [brandFoods, setbrandFoods] = useState([]);
   const getFood = () => {
-    fetch("https://backend-stretch-i1f4lhfqx-peterkims-projects.vercel.app/foodnames")
+    fetch("https://backend-stretch-q0b9aztqb-peterkims-projects.vercel.app/foodnames")
     .then(response => response.json())
     .then(data => {
       setbrandFoods(data)
